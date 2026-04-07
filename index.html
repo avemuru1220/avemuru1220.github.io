@@ -1,321 +1,332 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Akhila Vemuru | Data Scientist</title>
-  <meta
-    name="description"
-    content="Akhila Vemuru portfolio - Data Scientist specializing in NLP, Machine Learning, dashboards, and analytics."
-  />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="page-shell">
-    <header class="topbar">
-      <div class="profile-mini">
-        <div class="mini-avatar">A</div>
-      </div>
+:root {
+  --bg: #0f1115;
+  --panel: #151922;
+  --panel-2: #1a1f2a;
+  --text: #f3f4f6;
+  --muted: #a1a1aa;
+  --line: rgba(255, 255, 255, 0.08);
+  --accent: #d4d4d8;
+  --max: 1120px;
+}
 
-      <nav class="nav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact" class="contact-pill">Contact</a>
-        <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
-      </nav>
-    </header>
+body.light {
+  --bg: #ffffff;
+  --panel: #f4f4f5;
+  --panel-2: #ececf1;
+  --text: #111827;
+  --muted: #52525b;
+  --line: rgba(0, 0, 0, 0.08);
+  --accent: #27272a;
+}
 
-    <main>
-      <section id="home" class="hero-card">
-        <div class="hero-left">
-          <p class="small-label">AKHILA VEMURU</p>
-          <h1>DATA</h1>
-        </div>
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
-        <div class="hero-center">
-          <div class="portrait-card">
-            <div class="portrait-placeholder">
-              <div class="portrait-initials">AV</div>
-            </div>
-          </div>
-          <div class="hello-badge">Hi</div>
-        </div>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  transition: background 0.25s ease, color 0.25s ease;
+}
 
-        <div class="hero-right">
-          <h1>SCIENTIST</h1>
-          <p>
-            I’m a Houston-based data scientist focused on machine learning,
-            NLP, analytics, dashboards, and practical business solutions.
-          </p>
-        </div>
-      </section>
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-      <section class="grid-two">
-        <div id="about" class="info-card">
-          <div class="status-badge">Available for work</div>
-          <h2>ABOUT ME</h2>
-          <p class="muted">
-            Hi, I’m Akhila — a data scientist passionate about building
-            meaningful machine learning and analytics solutions that turn
-            raw data into clear business impact.
-          </p>
+.container {
+  width: min(var(--max), calc(100% - 48px));
+  margin: 0 auto;
+}
 
-          <div class="stats-row">
-            <div>
-              <h3>4+</h3>
-              <p>Years Experience</p>
-            </div>
-            <div>
-              <h3>4</h3>
-              <p>Key Projects</p>
-            </div>
-            <div>
-              <h3>10K+</h3>
-              <p>Records Analyzed</p>
-            </div>
-          </div>
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
 
-          <div class="about-links">
-            <div>
-              <span>Call Today :</span>
-              <p>+1 (346) 697-2039</p>
-            </div>
-            <div>
-              <span>Email :</span>
-              <p>akhilavemuru1220@gmail.com</p>
-            </div>
-          </div>
+.nav-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  gap: 18px;
+}
 
-          <a href="#experience" class="outline-btn">MY STORY</a>
-        </div>
+.brand {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
 
-        <div id="experience" class="info-card">
-          <div class="status-badge">Experience</div>
-          <h2>PROFESSIONAL EXPERIENCE</h2>
+.nav {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  align-items: center;
+}
 
-          <div class="experience-list">
-            <div class="exp-item">
-              <h4>Data Analyst — Guardian’s Embrace</h4>
-              <span>2026 — Present</span>
-              <p>
-                Analyzed donor and operational records using Python, SQL, and Excel.
-                Built dashboards and automated reporting workflows to support outreach
-                and fundraising decisions.
-              </p>
-            </div>
+.nav a {
+  color: var(--muted);
+  font-size: 14px;
+  transition: color 0.25s ease;
+}
 
-            <div class="exp-item">
-              <h4>Data Analyst — University of Houston</h4>
-              <span>2024 — Present</span>
-              <p>
-                Worked with financial and operational datasets, automated validation,
-                and supported reporting for audit, reconciliation, and analysis.
-              </p>
-            </div>
+.nav a:hover {
+  color: var(--text);
+}
 
-            <div class="exp-item">
-              <h4>Data Analyst — Capgemini</h4>
-              <span>2021 — 2023</span>
-              <p>
-                Designed SQL ETL workflows, built dashboards, and resolved production
-                data issues through validation and anomaly detection.
-              </p>
-            </div>
+#theme-toggle {
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 14px;
+}
 
-            <div class="exp-item">
-              <h4>Intern — Capgemini</h4>
-              <span>2021</span>
-              <p>
-                Built a vehicle rental platform using Java, Spring Boot, Angular, and SQL.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+.hero {
+  padding: 90px 0 60px;
+}
 
-      <section class="grid-two">
-        <div id="skills" class="info-card">
-          <div class="status-badge">Tech Stack</div>
-          <h2>MY TECH STACK</h2>
-          <p class="muted">
-            I work across data science, analytics, NLP, visualization, and applied
-            machine learning with a focus on useful, production-style solutions.
-          </p>
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  gap: 36px;
+  align-items: end;
+}
 
-          <div class="stack-list">
-            <div class="stack-item">
-              <div class="stack-icon">Py</div>
-              <div>
-                <h4>Python</h4>
-                <p>Pandas, NumPy, Scikit-learn, NLP workflows, modeling</p>
-              </div>
-            </div>
+.eyebrow,
+.section-label,
+.card-label,
+.project-type {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 12px;
+  color: var(--muted);
+}
 
-            <div class="stack-item">
-              <div class="stack-icon">SQL</div>
-              <div>
-                <h4>SQL</h4>
-                <p>ETL pipelines, transformations, reporting, validation</p>
-              </div>
-            </div>
+h1 {
+  margin: 14px 0 18px;
+  font-size: 60px;
+  line-height: 1.05;
+}
 
-            <div class="stack-item">
-              <div class="stack-icon">BI</div>
-              <div>
-                <h4>Power BI / Tableau</h4>
-                <p>Dashboards, KPI tracking, forecasting, visual storytelling</p>
-              </div>
-            </div>
+h2 {
+  margin: 10px 0 0;
+  font-size: 38px;
+  line-height: 1.1;
+}
 
-            <div class="stack-item">
-              <div class="stack-icon">ML</div>
-              <div>
-                <h4>Machine Learning / NLP</h4>
-                <p>Transformers, RAG, feature engineering, predictive modeling</p>
-              </div>
-            </div>
-          </div>
-        </div>
+h3 {
+  margin: 10px 0 12px;
+  font-size: 24px;
+  line-height: 1.2;
+}
 
-        <div id="projects" class="info-card">
-          <div class="status-badge">Projects</div>
-          <h2>FEATURED PROJECTS</h2>
+.hero-text,
+.section p,
+.project-card p,
+.contact-text,
+.hero-card p,
+.detail-card p {
+  color: var(--muted);
+  font-size: 16px;
+}
 
-          <div class="project-grid">
-            <a href="#fraud" class="project-box dark-box">
-              <p class="stars">★★★★★</p>
-              <h4>Fraudulent Job Posting Detection</h4>
-              <p>
-                Built transformer-based fraud detection on 18K+ postings with 90%+ ROC-AUC.
-              </p>
-            </a>
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
 
-            <a href="#house" class="project-box">
-              <p class="stars">★★★★★</p>
-              <h4>House Price Prediction</h4>
-              <p>
-                Developed regression models with feature engineering and ~85% accuracy.
-              </p>
-            </a>
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 20px;
+  border-radius: 999px;
+  font-size: 14px;
+  transition: transform 0.2s ease;
+}
 
-            <a href="#disney" class="project-box purple-box">
-              <h3>40K+</h3>
-              <p>Disney reviews analyzed using NLP and Tableau</p>
-            </a>
+.btn:hover {
+  transform: translateY(-2px);
+}
 
-            <a href="#sales" class="project-box">
-              <p class="stars">★★★★★</p>
-              <h4>Sales Forecasting Dashboard</h4>
-              <p>
-                Built Power BI dashboards using DAX and forecasting techniques.
-              </p>
-            </a>
-          </div>
-        </div>
-      </section>
+.btn-primary {
+  background: var(--text);
+  color: var(--bg);
+}
 
-      <section class="detail-wrapper">
-        <div id="fraud" class="detail-card">
-          <h3>Fraudulent Job Posting Detection</h3>
-          <p>
-            Built an NLP-based fraud detection system using DistilBERT and RoBERTa
-            to classify 18K+ job postings and identify suspicious language patterns.
-          </p>
-          <ul>
-            <li>Achieved 90%+ ROC-AUC</li>
-            <li>Handled class imbalance effectively</li>
-            <li>Used RAG for interpretability and explanation</li>
-          </ul>
-        </div>
+.btn-secondary {
+  border: 1px solid var(--line);
+  color: var(--text);
+}
 
-        <div id="house" class="detail-card">
-          <h3>House Price Prediction</h3>
-          <p>
-            Developed a regression workflow to estimate housing prices using structured
-            property data, preprocessing, feature engineering, and evaluation.
-          </p>
-          <ul>
-            <li>Reached ~85% accuracy</li>
-            <li>Identified strong pricing drivers</li>
-            <li>Used Python for full model workflow</li>
-          </ul>
-        </div>
+.hero-card,
+.project-card,
+.detail-card,
+.resume-box,
+.contact-box {
+  background: linear-gradient(180deg, var(--panel), var(--panel-2));
+  border: 1px solid var(--line);
+  border-radius: 24px;
+}
 
-        <div id="disney" class="detail-card">
-          <h3>Disneyland Review Analysis</h3>
-          <p>
-            Analyzed 40,000+ customer reviews to uncover satisfaction trends,
-            complaint categories, and visitor experience patterns.
-          </p>
-          <ul>
-            <li>Engineered 45+ features from review text</li>
-            <li>Applied NLP for sentiment and complaint analysis</li>
-            <li>Built Tableau dashboards for trend insights</li>
-          </ul>
-        </div>
+.hero-card {
+  padding: 28px;
+}
 
-        <div id="sales" class="detail-card">
-          <h3>Sales Forecasting Dashboard</h3>
-          <p>
-            Built an interactive Power BI dashboard for retail sales analysis
-            and forecasting using DAX and time-based analysis.
-          </p>
-          <ul>
-            <li>Created KPI-driven reporting views</li>
-            <li>Used forecasting methods for seasonal trends</li>
-            <li>Turned sales data into decision-ready insights</li>
-          </ul>
-        </div>
-      </section>
+.section {
+  padding: 80px 0;
+}
 
-      <section id="resume" class="bottom-card">
-        <div>
-          <p class="small-label">RESUME</p>
-          <h2>Download my latest resume</h2>
-        </div>
-        <a href="resume.pdf" target="_blank" class="contact-pill large-pill">Open Resume</a>
-      </section>
+.alt {
+  background: rgba(255, 255, 255, 0.02);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
 
-      <section id="contact" class="bottom-card">
-        <div>
-          <p class="small-label">CONTACT</p>
-          <h2>Let’s connect</h2>
-          <p class="muted">
-            I’m open to data science, analytics, and machine learning opportunities.
-          </p>
-        </div>
-        <div class="contact-links">
-          <a href="mailto:akhilavemuru1220@gmail.com">akhilavemuru1220@gmail.com</a>
-          <a href="https://www.linkedin.com/in/avemuru1220/" target="_blank">LinkedIn</a>
-        </div>
-      </section>
-    </main>
-  </div>
+body.light .alt {
+  background: rgba(0, 0, 0, 0.02);
+}
 
-  <script>
-    const toggle = document.getElementById("theme-toggle");
-    const body = document.body;
+.section-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 48px;
+}
 
-    function setTheme(theme) {
-      if (theme === "dark") {
-        body.classList.add("dark-mode");
-        toggle.textContent = "☀️";
-      } else {
-        body.classList.remove("dark-mode");
-        toggle.textContent = "🌙";
-      }
-    }
+.section-head {
+  margin-bottom: 28px;
+}
 
-    const savedTheme = localStorage.getItem("theme") || "light";
-    setTheme(savedTheme);
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 28px;
+}
 
-    toggle.addEventListener("click", () => {
-      const newTheme = body.classList.contains("dark-mode") ? "light" : "dark";
-      localStorage.setItem("theme", newTheme);
-      setTheme(newTheme);
-    });
-  </script>
-</body>
-</html>
+.project-card {
+  padding: 26px;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+}
+
+.project-link {
+  display: block;
+}
+
+.project-cta {
+  display: inline-block;
+  margin-top: 16px;
+  color: var(--text);
+  font-size: 14px;
+}
+
+.detail-stack {
+  display: grid;
+  gap: 22px;
+  margin-top: 28px;
+}
+
+.detail-card {
+  padding: 28px;
+}
+
+.detail-card ul {
+  margin: 18px 0 0;
+  padding-left: 20px;
+  color: var(--muted);
+}
+
+.detail-card li {
+  margin-bottom: 10px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skills-list span {
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  color: var(--accent);
+  font-size: 14px;
+}
+
+.resume-box,
+.contact-box {
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.contact-box {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.contact-links a {
+  color: var(--text);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+body.light .contact-links a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 900px) {
+  .hero-grid,
+  .section-grid,
+  .projects-grid,
+  .resume-box {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    gap: 14px;
+  }
+
+  .hero {
+    padding-top: 60px;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+}
