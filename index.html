@@ -1,332 +1,282 @@
-:root {
-  --bg: #0f1115;
-  --panel: #151922;
-  --panel-2: #1a1f2a;
-  --text: #f3f4f6;
-  --muted: #a1a1aa;
-  --line: rgba(255, 255, 255, 0.08);
-  --accent: #d4d4d8;
-  --max: 1120px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akhila Vemuru | Data Scientist</title>
+  <meta
+    name="description"
+    content="Akhila Vemuru portfolio - Data Scientist specializing in NLP, Machine Learning, dashboards, and analytics."
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <div class="brand">Akhila Vemuru</div>
 
-body.light {
-  --bg: #ffffff;
-  --panel: #f4f4f5;
-  --panel-2: #ececf1;
-  --text: #111827;
-  --muted: #52525b;
-  --line: rgba(0, 0, 0, 0.08);
-  --accent: #27272a;
-}
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#details">Project Details</a>
+        <a href="#skills">Skills</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" aria-label="Toggle light and dark mode">🌙</button>
+      </nav>
+    </div>
+  </header>
 
-* {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Portfolio</p>
+          <h1>
+            Data Scientist building practical systems with
+            machine learning, NLP, and analytics.
+          </h1>
+          <p class="hero-text">
+            I’m Akhila Vemuru, a data scientist with 4+ years of combined industry
+            and academic experience across predictive modeling, NLP, ETL workflows,
+            dashboards, and operational analytics.
+          </p>
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.7;
-  transition: background 0.25s ease, color 0.25s ease;
-}
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="resume.pdf" target="_blank">Resume</a>
+          </div>
+        </div>
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+        <div class="hero-card">
+          <p class="card-label">Current Focus</p>
+          <h3>Machine Learning, NLP, Dashboards</h3>
+          <p>
+            Python, SQL, Power BI, Tableau, Transformers, ETL pipelines,
+            forecasting, and analytics for business decision-making.
+          </p>
+        </div>
+      </div>
+    </section>
 
-.container {
-  width: min(var(--max), calc(100% - 48px));
-  margin: 0 auto;
-}
+    <section id="about" class="section">
+      <div class="container section-grid">
+        <div>
+          <p class="section-label">About</p>
+          <h2>Clear, data-driven work with business impact.</h2>
+        </div>
 
-.topbar {
-  position: sticky;
-  top: 0;
-  z-index: 20;
-  background: var(--bg);
-  border-bottom: 1px solid var(--line);
-}
+        <div>
+          <p>
+            I recently completed my Master’s in Data Science at the University of Houston.
+            My background includes roles at Guardian’s Embrace, the University of Houston,
+            and Capgemini, where I worked on data analysis, ETL workflows, reporting
+            automation, KPI dashboards, anomaly detection, and machine learning use cases.
+          </p>
+          <p>
+            I enjoy building solutions that are technically strong and easy for teams
+            to use in practice.
+          </p>
+        </div>
+      </div>
+    </section>
 
-.nav-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-  gap: 18px;
-}
+    <section id="projects" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-label">Projects</p>
+            <h2>Selected Work</h2>
+          </div>
+        </div>
 
-.brand {
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-}
+        <div class="projects-grid">
+          <a class="project-card project-link" href="#fraud-project">
+            <p class="project-type">NLP • Transformers • RAG</p>
+            <h3>Fraudulent Job Posting Detection</h3>
+            <p>
+              Built an NLP-based fraud detection system using transformer models to
+              classify 18K+ job postings, achieving 90%+ ROC-AUC and improving
+              interpretability with retrieval-augmented explanations.
+            </p>
+            <span class="project-cta">View Details →</span>
+          </a>
 
-.nav {
-  display: flex;
-  gap: 22px;
-  flex-wrap: wrap;
-  align-items: center;
-}
+          <a class="project-card project-link" href="#house-project">
+            <p class="project-type">Machine Learning • Regression</p>
+            <h3>House Price Prediction</h3>
+            <p>
+              Developed a regression-based model for housing price prediction using
+              structured property data, feature engineering, and model evaluation,
+              reaching about 85% accuracy.
+            </p>
+            <span class="project-cta">View Details →</span>
+          </a>
 
-.nav a {
-  color: var(--muted);
-  font-size: 14px;
-  transition: color 0.25s ease;
-}
+          <a class="project-card project-link" href="#disney-project">
+            <p class="project-type">NLP • Tableau • Text Analytics</p>
+            <h3>Disneyland Review Analysis</h3>
+            <p>
+              Analyzed 40,000+ customer reviews to identify sentiment trends,
+              complaint patterns, and visitor experience signals using Python and Tableau.
+            </p>
+            <span class="project-cta">View Details →</span>
+          </a>
 
-.nav a:hover {
-  color: var(--text);
-}
+          <a class="project-card project-link" href="#sales-project">
+            <p class="project-type">Power BI • DAX • Forecasting</p>
+            <h3>Sales Forecasting Dashboard</h3>
+            <p>
+              Built interactive dashboards and forecasting views for seasonal sales analysis,
+              helping convert raw transaction data into decision-ready insights.
+            </p>
+            <span class="project-cta">View Details →</span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-#theme-toggle {
-  padding: 8px 12px;
-  border-radius: 999px;
-  border: 1px solid var(--line);
-  background: transparent;
-  color: var(--text);
-  cursor: pointer;
-  font-size: 14px;
-}
+    <section id="details" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-label">Project Details</p>
+            <h2>Deep Dive</h2>
+          </div>
+        </div>
 
-.hero {
-  padding: 90px 0 60px;
-}
+        <div class="detail-stack">
+          <article id="fraud-project" class="detail-card">
+            <p class="project-type">NLP • Transformers • RAG</p>
+            <h3>Fraudulent Job Posting Detection</h3>
+            <p>
+              Built an NLP-based fraud detection system using transformer models such as
+              DistilBERT and RoBERTa to classify 18K+ job postings and identify suspicious
+              language patterns.
+            </p>
+            <ul>
+              <li>Achieved 90%+ ROC-AUC through class imbalance handling and model evaluation</li>
+              <li>Applied retrieval-augmented generation to improve interpretability</li>
+              <li>Focused on explainable fraud detection for practical decision support</li>
+            </ul>
+          </article>
 
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.4fr 0.8fr;
-  gap: 36px;
-  align-items: end;
-}
+          <article id="house-project" class="detail-card">
+            <p class="project-type">Machine Learning • Regression</p>
+            <h3>House Price Prediction</h3>
+            <p>
+              Developed a regression-based machine learning workflow to estimate housing prices
+              from structured property data using preprocessing, feature engineering, and evaluation.
+            </p>
+            <ul>
+              <li>Reached about 85% accuracy using engineered features and regression modeling</li>
+              <li>Identified strong pricing drivers such as income, location, and housing features</li>
+              <li>Used Python tools for data cleaning, analysis, training, and model assessment</li>
+            </ul>
+          </article>
 
-.eyebrow,
-.section-label,
-.card-label,
-.project-type {
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  font-size: 12px;
-  color: var(--muted);
-}
+          <article id="disney-project" class="detail-card">
+            <p class="project-type">NLP • Tableau • Text Analytics</p>
+            <h3>Disneyland Review Analysis</h3>
+            <p>
+              Analyzed 40,000+ customer reviews to uncover satisfaction trends, common complaint
+              categories, and visitor experience insights across Disneyland locations.
+            </p>
+            <ul>
+              <li>Engineered 45+ features from review data using Python</li>
+              <li>Used NLP techniques to surface customer sentiment and recurring concerns</li>
+              <li>Built Tableau dashboards to visualize trends by year, branch, and review patterns</li>
+            </ul>
+          </article>
 
-h1 {
-  margin: 14px 0 18px;
-  font-size: 60px;
-  line-height: 1.05;
-}
+          <article id="sales-project" class="detail-card">
+            <p class="project-type">Power BI • DAX • Forecasting</p>
+            <h3>Sales Forecasting Dashboard</h3>
+            <p>
+              Built an interactive Power BI dashboard for retail sales analysis and forecasting,
+              using DAX and time-based analysis to support business-focused decision making.
+            </p>
+            <ul>
+              <li>Created KPI-driven dashboard views for seasonal sales trends</li>
+              <li>Used DAX and forecasting methods to support trend analysis</li>
+              <li>Turned raw sales data into clearer, decision-ready business insights</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
 
-h2 {
-  margin: 10px 0 0;
-  font-size: 38px;
-  line-height: 1.1;
-}
+    <section id="skills" class="section">
+      <div class="container section-grid">
+        <div>
+          <p class="section-label">Skills</p>
+          <h2>Core stack</h2>
+        </div>
 
-h3 {
-  margin: 10px 0 12px;
-  font-size: 24px;
-  line-height: 1.2;
-}
+        <div class="skills-list">
+          <span>Python</span>
+          <span>SQL</span>
+          <span>Pandas</span>
+          <span>NumPy</span>
+          <span>Scikit-learn</span>
+          <span>NLP</span>
+          <span>Transformers</span>
+          <span>RAG</span>
+          <span>Power BI</span>
+          <span>Tableau</span>
+          <span>ETL Pipelines</span>
+          <span>Forecasting</span>
+        </div>
+      </div>
+    </section>
 
-.hero-text,
-.section p,
-.project-card p,
-.contact-text,
-.hero-card p,
-.detail-card p {
-  color: var(--muted);
-  font-size: 16px;
-}
+    <section id="resume" class="section alt">
+      <div class="container resume-box">
+        <div>
+          <p class="section-label">Resume</p>
+          <h2>Download my latest resume</h2>
+        </div>
+        <a class="btn btn-primary" href="resume.pdf" target="_blank">Open Resume</a>
+      </div>
+    </section>
 
-.hero-actions {
-  display: flex;
-  gap: 14px;
-  margin-top: 28px;
-  flex-wrap: wrap;
-}
+    <section id="contact" class="section">
+      <div class="container contact-box">
+        <p class="section-label">Contact</p>
+        <h2>Let’s connect</h2>
+        <p class="contact-text">
+          I’m open to data science, analytics, and machine learning opportunities.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:akhilavemuru1220@gmail.com">akhilavemuru1220@gmail.com</a>
+          <a href="https://www.linkedin.com/in/avemuru1220/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 13px 20px;
-  border-radius: 999px;
-  font-size: 14px;
-  transition: transform 0.2s ease;
-}
+  <script>
+    const toggle = document.getElementById("theme-toggle");
+    const body = document.body;
 
-.btn:hover {
-  transform: translateY(-2px);
-}
+    function setTheme(theme) {
+      if (theme === "light") {
+        body.classList.add("light");
+        toggle.textContent = "☀️";
+      } else {
+        body.classList.remove("light");
+        toggle.textContent = "🌙";
+      }
+    }
 
-.btn-primary {
-  background: var(--text);
-  color: var(--bg);
-}
+    const savedTheme = localStorage.getItem("theme") || "dark";
+    setTheme(savedTheme);
 
-.btn-secondary {
-  border: 1px solid var(--line);
-  color: var(--text);
-}
-
-.hero-card,
-.project-card,
-.detail-card,
-.resume-box,
-.contact-box {
-  background: linear-gradient(180deg, var(--panel), var(--panel-2));
-  border: 1px solid var(--line);
-  border-radius: 24px;
-}
-
-.hero-card {
-  padding: 28px;
-}
-
-.section {
-  padding: 80px 0;
-}
-
-.alt {
-  background: rgba(255, 255, 255, 0.02);
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-}
-
-body.light .alt {
-  background: rgba(0, 0, 0, 0.02);
-}
-
-.section-grid {
-  display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 48px;
-}
-
-.section-head {
-  margin-bottom: 28px;
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 22px;
-  margin-top: 28px;
-}
-
-.project-card {
-  padding: 26px;
-  transition: transform 0.25s ease, border-color 0.25s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-4px);
-}
-
-.project-link {
-  display: block;
-}
-
-.project-cta {
-  display: inline-block;
-  margin-top: 16px;
-  color: var(--text);
-  font-size: 14px;
-}
-
-.detail-stack {
-  display: grid;
-  gap: 22px;
-  margin-top: 28px;
-}
-
-.detail-card {
-  padding: 28px;
-}
-
-.detail-card ul {
-  margin: 18px 0 0;
-  padding-left: 20px;
-  color: var(--muted);
-}
-
-.detail-card li {
-  margin-bottom: 10px;
-}
-
-.skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.skills-list span {
-  padding: 10px 14px;
-  border-radius: 999px;
-  background: var(--panel);
-  border: 1px solid var(--line);
-  color: var(--accent);
-  font-size: 14px;
-}
-
-.resume-box,
-.contact-box {
-  padding: 32px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 24px;
-}
-
-.contact-box {
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.contact-links {
-  display: flex;
-  gap: 18px;
-  flex-wrap: wrap;
-}
-
-.contact-links a {
-  color: var(--text);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-body.light .contact-links a {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 900px) {
-  .hero-grid,
-  .section-grid,
-  .projects-grid,
-  .resume-box {
-    grid-template-columns: 1fr;
-  }
-
-  .nav-wrap {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav {
-    gap: 14px;
-  }
-
-  .hero {
-    padding-top: 60px;
-  }
-
-  h1 {
-    font-size: 42px;
-  }
-
-  h2 {
-    font-size: 30px;
-  }
-}
+    toggle.addEventListener("click", () => {
+      const newTheme = body.classList.contains("light") ? "dark" : "light";
+      localStorage.setItem("theme", newTheme);
+      setTheme(newTheme);
+    });
+  </script>
+</body>
+</html>
