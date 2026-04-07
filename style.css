@@ -31,3 +31,36 @@
 .detail-card li {
   margin-bottom: 10px;
 }
+.project-link {
+  display: block;
+}
+
+.project-cta {
+  display: inline-block;
+  margin-top: 16px;
+  color: var(--text);
+  font-size: 14px;
+}
+
+.detail-stack {
+  display: grid;
+  gap: 22px;
+  margin-top: 28px;
+}
+
+.detail-card {
+  background: linear-gradient(180deg, var(--panel), var(--panel-2));
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 28px;
+}
+
+.detail-card ul {
+  margin: 18px 0 0;
+  padding-left: 20px;
+  color: var(--muted);
+}
+
+.detail-card li {
+  margin-bottom: 10px;
+}
