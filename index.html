@@ -1,69 +1,250 @@
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <p class="section-label">Project Details</p>
-        <h2>Deep Dive</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akhila Vemuru | Data Scientist</title>
+  <meta name="description" content="Akhila Vemuru portfolio - Data Scientist specializing in NLP, Machine Learning, dashboards, and analytics." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <div class="brand">Akhila Vemuru</div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#details">Project Details</a>
+        <a href="#skills">Skills</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Portfolio</p>
+          <h1>
+            Data Scientist building practical systems with
+            machine learning, NLP, and analytics.
+          </h1>
+          <p class="hero-text">
+            I’m Akhila Vemuru, a data scientist with 4+ years of combined industry
+            and academic experience across predictive modeling, NLP, ETL workflows,
+            dashboards, and operational analytics.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="resume.pdf" target="_blank">Resume</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <p class="card-label">Current Focus</p>
+          <h3>Machine Learning, NLP, Dashboards</h3>
+          <p>
+            Python, SQL, Power BI, Tableau, Transformers, ETL pipelines,
+            forecasting, and analytics for business decision-making.
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="detail-stack">
-      <article id="fraud-project" class="detail-card">
-        <p class="project-type">NLP • Transformers • RAG</p>
-        <h3>Fraudulent Job Posting Detection</h3>
-        <p>
-          Built an NLP-based fraud detection system using transformer models such as
-          DistilBERT and RoBERTa to classify 18K+ job postings and identify suspicious
-          language patterns.
-        </p>
-        <ul>
-          <li>Achieved 90%+ ROC-AUC through class imbalance handling and model evaluation</li>
-          <li>Applied retrieval-augmented generation to improve interpretability</li>
-          <li>Focused on explainable fraud detection for practical decision support</li>
-        </ul>
-      </article>
+    <section id="about" class="section">
+      <div class="container section-grid">
+        <div>
+          <p class="section-label">About</p>
+          <h2>Clear, data-driven work with business impact.</h2>
+        </div>
+        <div>
+          <p>
+            I recently completed my Master’s in Data Science at the University of Houston.
+            My background includes roles at Guardian’s Embrace, the University of Houston,
+            and Capgemini, where I worked on data analysis, ETL workflows, reporting
+            automation, KPI dashboards, anomaly detection, and machine learning use cases.
+          </p>
+          <p>
+            I enjoy building solutions that are technically strong and easy for teams
+            to use in practice.
+          </p>
+        </div>
+      </div>
+    </section>
 
-      <article id="house-project" class="detail-card">
-        <p class="project-type">Machine Learning • Regression</p>
-        <h3>House Price Prediction</h3>
-        <p>
-          Developed a regression-based machine learning workflow to estimate housing prices
-          from structured property data using preprocessing, feature engineering, and evaluation.
-        </p>
-        <ul>
-          <li>Reached about 85% accuracy using engineered features and regression modeling</li>
-          <li>Identified strong pricing drivers such as income, location, and housing features</li>
-          <li>Used Python tools for data cleaning, analysis, training, and model assessment</li>
-        </ul>
-      </article>
+    <section id="projects" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-label">Projects</p>
+            <h2>Selected Work</h2>
+          </div>
+        </div>
 
-      <article id="disney-project" class="detail-card">
-        <p class="project-type">NLP • Tableau • Text Analytics</p>
-        <h3>Disneyland Review Analysis</h3>
-        <p>
-          Analyzed 40,000+ customer reviews to uncover satisfaction trends, common complaint
-          categories, and visitor experience insights across Disneyland locations.
-        </p>
-        <ul>
-          <li>Engineered 45+ features from review data using Python</li>
-          <li>Used NLP techniques to surface customer sentiment and recurring concerns</li>
-          <li>Built Tableau dashboards to visualize trends by year, branch, and review patterns</li>
-        </ul>
-      </article>
+        <div class="projects-grid">
+          <a class="project-card project-link" href="#fraud-project">
+            <p class="project-type">NLP • Transformers • RAG</p>
+            <h3>Fraudulent Job Posting Detection</h3>
+            <p>
+              Built an NLP-based fraud detection system using transformer models to
+              classify 18K+ job postings, achieving 90%+ ROC-AUC and improving
+              interpretability with retrieval-augmented explanations.
+            </p>
+            <span class="project-cta">View Details →</span>
+          </a>
 
-      <article id="sales-project" class="detail-card">
-        <p class="project-type">Power BI • DAX • Forecasting</p>
-        <h3>Sales Forecasting Dashboard</h3>
-        <p>
-          Built an interactive Power BI dashboard for retail sales analysis and forecasting,
-          using DAX and time-based analysis to support business-focused decision making.
+          <a class="project-card project-link" href="#house-project">
+            <p class="project-type">Machine Learning • Regression</p>
+            <h3>House Price Prediction</h3>
+            <p>
+              Developed a regression-based model for housing price prediction using
+              structured property data, feature engineering, and model evaluation,
+              reaching about 85% accuracy.
+            </p>
+            <span class="project-cta">View Details →</span>
+          </a>
+
+          <a class="project-card project-link" href="#disney-project">
+            <p class="project-type">NLP • Tableau • Text Analytics</p>
+            <h3>Disneyland Review Analysis</h3>
+            <p>
+              Analyzed 40,000+ customer reviews to identify sentiment trends,
+              complaint patterns, and visitor experience signals using Python and Tableau.
+            </p>
+            <span class="project-cta">View Details →</span>
+          </a>
+
+          <a class="project-card project-link" href="#sales-project">
+            <p class="project-type">Power BI • DAX • Forecasting</p>
+            <h3>Sales Forecasting Dashboard</h3>
+            <p>
+              Built interactive dashboards and forecasting views for seasonal sales analysis,
+              helping convert raw transaction data into decision-ready insights.
+            </p>
+            <span class="project-cta">View Details →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="details" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-label">Project Details</p>
+            <h2>Deep Dive</h2>
+          </div>
+        </div>
+
+        <div class="detail-stack">
+          <article id="fraud-project" class="detail-card">
+            <p class="project-type">NLP • Transformers • RAG</p>
+            <h3>Fraudulent Job Posting Detection</h3>
+            <p>
+              Built an NLP-based fraud detection system using transformer models such as
+              DistilBERT and RoBERTa to classify 18K+ job postings and identify suspicious
+              language patterns.
+            </p>
+            <ul>
+              <li>Achieved 90%+ ROC-AUC through class imbalance handling and model evaluation</li>
+              <li>Applied retrieval-augmented generation to improve interpretability</li>
+              <li>Focused on explainable fraud detection for practical decision support</li>
+            </ul>
+          </article>
+
+          <article id="house-project" class="detail-card">
+            <p class="project-type">Machine Learning • Regression</p>
+            <h3>House Price Prediction</h3>
+            <p>
+              Developed a regression-based machine learning workflow to estimate housing prices
+              from structured property data using preprocessing, feature engineering, and evaluation.
+            </p>
+            <ul>
+              <li>Reached about 85% accuracy using engineered features and regression modeling</li>
+              <li>Identified strong pricing drivers such as income, location, and housing features</li>
+              <li>Used Python tools for data cleaning, analysis, training, and model assessment</li>
+            </ul>
+          </article>
+
+          <article id="disney-project" class="detail-card">
+            <p class="project-type">NLP • Tableau • Text Analytics</p>
+            <h3>Disneyland Review Analysis</h3>
+            <p>
+              Analyzed 40,000+ customer reviews to uncover satisfaction trends, common complaint
+              categories, and visitor experience insights across Disneyland locations.
+            </p>
+            <ul>
+              <li>Engineered 45+ features from review data using Python</li>
+              <li>Used NLP techniques to surface customer sentiment and recurring concerns</li>
+              <li>Built Tableau dashboards to visualize trends by year, branch, and review patterns</li>
+            </ul>
+          </article>
+
+          <article id="sales-project" class="detail-card">
+            <p class="project-type">Power BI • DAX • Forecasting</p>
+            <h3>Sales Forecasting Dashboard</h3>
+            <p>
+              Built an interactive Power BI dashboard for retail sales analysis and forecasting,
+              using DAX and time-based analysis to support business-focused decision making.
+            </p>
+            <ul>
+              <li>Created KPI-driven dashboard views for seasonal sales trends</li>
+              <li>Used DAX and forecasting methods to support trend analysis</li>
+              <li>Turned raw sales data into clearer, decision-ready business insights</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container section-grid">
+        <div>
+          <p class="section-label">Skills</p>
+          <h2>Core stack</h2>
+        </div>
+        <div class="skills-list">
+          <span>Python</span>
+          <span>SQL</span>
+          <span>Pandas</span>
+          <span>NumPy</span>
+          <span>Scikit-learn</span>
+          <span>NLP</span>
+          <span>Transformers</span>
+          <span>RAG</span>
+          <span>Power BI</span>
+          <span>Tableau</span>
+          <span>ETL Pipelines</span>
+          <span>Forecasting</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="section alt">
+      <div class="container resume-box">
+        <div>
+          <p class="section-label">Resume</p>
+          <h2>Download my latest resume</h2>
+        </div>
+        <a class="btn btn-primary" href="resume.pdf" target="_blank">Open Resume</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-box">
+        <p class="section-label">Contact</p>
+        <h2>Let’s connect</h2>
+        <p class="contact-text">
+          I’m open to data science, analytics, and machine learning opportunities.
         </p>
-        <ul>
-          <li>Created KPI-driven dashboard views for seasonal sales trends</li>
-          <li>Used DAX and forecasting methods to support trend analysis</li>
-          <li>Turned raw sales data into clearer, decision-ready business insights</li>
-        </ul>
-      </article>
-    </div>
-  </div>
-</section>
+        <div class="contact-links">
+          <a href="mailto:akhilavemuru1220@gmail.com">akhilavemuru1220@gmail.com</a>
+          <a href="https://www.linkedin.com/in/avemuru1220/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
