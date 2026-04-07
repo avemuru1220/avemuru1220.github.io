@@ -330,3 +330,21 @@ body.light .contact-links a {
     font-size: 30px;
   }
 }
+.experience-stack {
+  display: grid;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.experience-card {
+  background: linear-gradient(180deg, var(--panel), var(--panel-2));
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 22px;
+}
+
+.exp-date {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
