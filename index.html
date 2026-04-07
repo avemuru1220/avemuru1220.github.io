@@ -1,70 +1,174 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Akhila Vemuru | Data Scientist</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Akhila Vemuru portfolio - Data Scientist specializing in NLP, Machine Learning, dashboards, and analytics." />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <div class="brand">Akhila Vemuru</div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#projects">Projects</a>
-  <a href="#skills">Skills</a>
-  <a href="#resume">Resume</a>
-  <a href="#contact">Contact</a>
-</nav>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Portfolio</p>
+          <h1>
+            Data Scientist building practical systems with
+            machine learning, NLP, and analytics.
+          </h1>
+          <p class="hero-text">
+            I’m Akhila Vemuru, a data scientist with 4+ years of combined industry
+            and academic experience across predictive modeling, NLP, ETL workflows,
+            dashboards, and operational analytics.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="resume.pdf" target="_blank">Resume</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <p class="card-label">Current Focus</p>
+          <h3>Machine Learning, NLP, Dashboards</h3>
+          <p>
+            Python, SQL, Power BI, Tableau, Transformers, ETL pipelines,
+            forecasting, and analytics for business decision-making.
+          </p>
+        </div>
+      </div>
+    </section>
 
-<section id="about">
-  <h1>Akhila Vemuru</h1>
-  <p class="subtitle">Data Scientist | NLP | Machine Learning</p>
+    <section id="about" class="section">
+      <div class="container section-grid">
+        <div>
+          <p class="section-label">About</p>
+          <h2>Clear, data-driven work with business impact.</h2>
+        </div>
+        <div>
+          <p>
+            I recently completed my Master’s in Data Science at the University of Houston.
+            My background includes roles at Guardian’s Embrace, the University of Houston,
+            and Capgemini, where I worked on data analysis, ETL workflows, reporting
+            automation, KPI dashboards, anomaly detection, and machine learning use cases.
+          </p>
+          <p>
+            I enjoy building solutions that are technically strong and easy for teams
+            to use in practice.
+          </p>
+        </div>
+      </div>
+    </section>
 
-  <p>
-    I am a Data Scientist with 4+ years of experience in machine learning,
-    NLP, and data analytics. I build data-driven systems using Python and SQL.
-  </p>
-</section>
+    <section id="projects" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-label">Projects</p>
+            <h2>Selected Work</h2>
+          </div>
+        </div>
 
-<section id="projects">
-  <h2>Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <p class="project-type">NLP • Transformers • RAG</p>
+            <h3>Fraudulent Job Posting Detection</h3>
+            <p>
+              Built an NLP-based fraud detection system using transformer models to
+              classify 18K+ job postings, achieving 90%+ ROC-AUC and improving
+              interpretability with retrieval-augmented explanations.
+            </p>
+          </article>
 
-  <div class="project">
-    <h3>Fraudulent Job Posting Detection</h3>
-    <p>Built NLP models using BERT to classify 18K+ job postings and achieved 90%+ ROC-AUC.</p>
-  </div>
+          <article class="project-card">
+            <p class="project-type">Machine Learning • Regression</p>
+            <h3>House Price Prediction</h3>
+            <p>
+              Developed a regression-based model for housing price prediction using
+              structured property data, feature engineering, and model evaluation,
+              reaching about 85% accuracy.
+            </p>
+          </article>
 
-  <div class="project">
-    <h3>House Price Prediction</h3>
-    <p>Developed regression models with 85% accuracy using feature engineering.</p>
-  </div>
+          <article class="project-card">
+            <p class="project-type">NLP • Tableau • Text Analytics</p>
+            <h3>Disneyland Review Analysis</h3>
+            <p>
+              Analyzed 40,000+ customer reviews to identify sentiment trends,
+              complaint patterns, and visitor experience signals using Python and Tableau.
+            </p>
+          </article>
 
-  <div class="project">
-    <h3>Disneyland Review Analysis</h3>
-    <p>Analyzed 40K+ reviews using NLP and built Tableau dashboards.</p>
-  </div>
+          <article class="project-card">
+            <p class="project-type">Power BI • DAX • Forecasting</p>
+            <h3>Sales Forecasting Dashboard</h3>
+            <p>
+              Built interactive dashboards and forecasting views for seasonal sales analysis,
+              helping convert raw transaction data into decision-ready insights.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <div class="project">
-    <h3>Sales Forecasting Dashboard</h3>
-    <p>Built Power BI dashboards using DAX and forecasting techniques.</p>
-  </div>
+    <section id="skills" class="section">
+      <div class="container section-grid">
+        <div>
+          <p class="section-label">Skills</p>
+          <h2>Core stack</h2>
+        </div>
+        <div class="skills-list">
+          <span>Python</span>
+          <span>SQL</span>
+          <span>Pandas</span>
+          <span>NumPy</span>
+          <span>Scikit-learn</span>
+          <span>NLP</span>
+          <span>Transformers</span>
+          <span>RAG</span>
+          <span>Power BI</span>
+          <span>Tableau</span>
+          <span>ETL Pipelines</span>
+          <span>Forecasting</span>
+        </div>
+      </div>
+    </section>
 
-</section>
+    <section id="resume" class="section alt">
+      <div class="container resume-box">
+        <div>
+          <p class="section-label">Resume</p>
+          <h2>Download my latest resume</h2>
+        </div>
+        <a class="btn btn-primary" href="resume.pdf" target="_blank">Open Resume</a>
+      </div>
+    </section>
 
-<section id="skills">
-  <h2>Skills</h2>
-  <p>Python | SQL | NLP | Machine Learning | Power BI | Tableau | ETL</p>
-</section>
-
-<section id="resume">
-  <h2>Resume</h2>
-  <a href="resume.pdf" target="_blank" class="btn">Download Resume</a>
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:akhilavemuru1220@gmail.com">akhilavemuru1220@gmail.com</a></p>
-  <p><a href="https://www.linkedin.com/in/avemuru1220/" target="_blank">LinkedIn</a></p>
-</section>
-
+    <section id="contact" class="section">
+      <div class="container contact-box">
+        <p class="section-label">Contact</p>
+        <h2>Let’s connect</h2>
+        <p class="contact-text">
+          I’m open to data science, analytics, and machine learning opportunities.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:akhilavemuru1220@gmail.com">akhilavemuru1220@gmail.com</a>
+          <a href="https://www.linkedin.com/in/avemuru1220/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
