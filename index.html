@@ -13,7 +13,7 @@
 <body>
   <header class="topbar">
     <div class="container nav-wrap">
-      <div class="brand">Akhila Vemuru</div>
+      <a href="#home" class="brand">Akhila Vemuru</a>
 
       <nav class="nav">
         <a href="#about">About</a>
@@ -22,232 +22,251 @@
         <a href="#projects">Projects</a>
         <a href="#certifications">Certifications</a>
         <a href="#skills">Skills</a>
-        <a href="#resume">Resume</a>
         <a href="#contact">Contact</a>
-        <button id="theme-toggle" aria-label="Toggle light and dark mode">🌙</button>
+        <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="home">
     <section class="hero section">
-      <div class="container hero-card">
-        <p class="eyebrow">Data Scientist Portfolio</p>
-        <h1>Akhila Vemuru</h1>
-        <p class="hero-subtitle">Machine Learning • NLP • Analytics • Dashboards</p>
-        <p class="hero-text">
-          I build practical data solutions using Python, SQL, machine learning, and NLP
-          to transform raw data into clear, actionable insights for business and operational decisions.
-        </p>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Data Scientist Portfolio</p>
+          <h1>Akhila Vemuru</h1>
+          <p class="hero-role">Machine Learning • NLP • Analytics • Dashboards</p>
+          <p class="hero-text">
+            Data Scientist with 4+ years of combined industry and academic experience
+            building machine learning models, NLP systems, dashboards, and data workflows
+            that support business and operational decision-making.
+          </p>
 
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#projects">View Projects</a>
-          <a class="btn btn-secondary" href="resume.pdf" target="_blank">Open Resume</a>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="resume.pdf" target="_blank">Open Resume</a>
+          </div>
+        </div>
+
+        <div class="hero-summary card">
+          <p class="card-label">Highlights</p>
+          <div class="summary-list">
+            <div class="summary-item">
+              <span class="summary-number">18K+</span>
+              <span class="summary-text">Job postings analyzed in NLP fraud detection</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-number">40K+</span>
+              <span class="summary-text">Customer reviews analyzed in text mining project</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-number">10K+</span>
+              <span class="summary-text">Operational and donor records analyzed</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-number">4+</span>
+              <span class="summary-text">Years of combined industry and academic experience</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="about" class="section">
-      <div class="container single-card">
+      <div class="container single-section card">
         <p class="section-label">About</p>
         <h2>About Me</h2>
         <p>
-          I am a Data Scientist with 4+ years of combined industry and academic experience in
-          machine learning, NLP, analytics, dashboarding, and ETL workflows. My work focuses on
-          building reliable, practical data solutions that help teams make better decisions through
-          clear analysis, predictive modeling, and business-friendly reporting.
+          I am a Data Scientist with experience in machine learning, NLP, analytics, and dashboarding.
+          My work focuses on building practical data solutions that turn raw information into meaningful
+          insights for technical and non-technical stakeholders.
         </p>
         <p>
-          I recently completed my Master’s in Data Science at the University of Houston. Across my
-          roles at Guardian’s Embrace, the University of Houston, and Capgemini, I have worked on
-          data validation, reporting automation, KPI dashboards, anomaly detection, SQL workflows,
-          and applied machine learning projects. I enjoy combining technical depth with clear communication
-          so that insights are useful for both technical and non-technical audiences.
+          I recently completed my Master’s in Data Science at the University of Houston. Across my work
+          at Guardian’s Embrace, the University of Houston, and Capgemini, I have built ETL workflows,
+          KPI dashboards, validation systems, anomaly detection processes, and predictive modeling projects
+          using Python, SQL, Power BI, Tableau, and modern NLP methods.
         </p>
       </div>
     </section>
 
     <section id="education" class="section">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-header">
           <p class="section-label">Education</p>
           <h2>Academic Background</h2>
         </div>
 
         <div class="education-grid">
-          <div class="education-card">
+          <article class="education-card card">
             <div class="edu-logo-wrap">
-              <img src="uh-logo.png" alt="University of Houston logo" class="edu-logo" />
+              <img src="uh_red.png" alt="University of Houston logo" class="edu-logo" />
             </div>
             <div class="edu-content">
               <h3>University of Houston</h3>
               <p class="edu-degree">Master’s in Data Science</p>
-              <p>CGPA: 3.66</p>
+              <p>CGPA: 3.66 / 4.0</p>
               <p>Jan 2024 – Dec 2025</p>
             </div>
-          </div>
+          </article>
 
-          <div class="education-card">
+          <article class="education-card card">
             <div class="edu-logo-wrap">
-              <img src="jit-logo.png" alt="Jawaharlal Institute of Technology Hyderabad logo" class="edu-logo" />
+              <img src="vjit.jpeg" alt="Vidya Jyothi Institute of Technology logo" class="edu-logo" />
             </div>
             <div class="edu-content">
-              <h3>Jawaharlal Institute of Technology, Hyderabad</h3>
-              <p class="edu-degree">Bachelor’s Degree</p>
-              <p>CGPA: [Add CGPA]</p>
-              <p>[Add Start Year] – [Add End Year]</p>
+              <h3>Vidya Jyothi Institute of Technology</h3>
+              <p class="edu-degree">Bachelor’s in Electronics and Communication</p>
+              <p>CGPA: 8.76 / 10</p>
+              <p>Aug 2017 – Jul 2021</p>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
     <section id="experience" class="section">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-header">
           <p class="section-label">Experience</p>
           <h2>Professional Experience</h2>
         </div>
 
         <div class="experience-stack">
-          <div class="experience-card">
+          <article class="experience-card card">
             <div class="experience-top">
               <h3>Data Analyst — Guardian’s Embrace</h3>
-              <p class="exp-date">2026 — Present</p>
+              <p class="exp-date">Feb 2026 – Present</p>
             </div>
             <ul>
               <li>Analyzed 10K+ donor and operational records using Python, SQL, and Excel.</li>
-              <li>Built KPI dashboards that improved visibility into donor engagement and program performance by 30%.</li>
+              <li>Built dashboards that improved visibility into donor engagement and program performance by 30%.</li>
               <li>Automated reporting workflows, reducing manual effort by 25%.</li>
             </ul>
-          </div>
+          </article>
 
-          <div class="experience-card">
+          <article class="experience-card card">
             <div class="experience-top">
               <h3>Data Analyst — University of Houston</h3>
-              <p class="exp-date">2024 — Present</p>
+              <p class="exp-date">Sep 2024 – Present</p>
             </div>
             <ul>
-              <li>Worked with HR, purchasing, and financial datasets using Excel, Smartsheet, and Oracle.</li>
+              <li>Worked with HR, purchasing, and financial data using Excel, Smartsheet, and Oracle.</li>
               <li>Improved audit efficiency by 40% through validation and reconciliation workflows.</li>
-              <li>Supported reporting and trend analysis for 500+ records and monthly transaction workflows.</li>
+              <li>Supported reporting and trend analysis across 500+ records and monthly transaction processes.</li>
             </ul>
-          </div>
+          </article>
 
-          <div class="experience-card">
+          <article class="experience-card card">
             <div class="experience-top">
               <h3>Data Analyst — Capgemini</h3>
-              <p class="exp-date">2021 — 2023</p>
+              <p class="exp-date">Aug 2021 – Dec 2023</p>
             </div>
             <ul>
               <li>Designed SQL ETL workflows to clean and transform policy and transaction data.</li>
               <li>Built dashboards across 8+ integrations, reducing troubleshooting time by 20%.</li>
               <li>Resolved 60+ production data issues using validation, anomaly detection, and root cause analysis.</li>
             </ul>
-          </div>
+          </article>
 
-          <div class="experience-card">
+          <article class="experience-card card">
             <div class="experience-top">
               <h3>Intern — Capgemini</h3>
-              <p class="exp-date">2021</p>
+              <p class="exp-date">Apr 2021 – Jul 2021</p>
             </div>
             <ul>
               <li>Developed a vehicle rental platform using Java, Spring Boot, Angular, and SQL.</li>
               <li>Supported frontend, backend, and booking data workflows for 1,000+ test bookings.</li>
             </ul>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
     <section id="projects" class="section">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-header">
           <p class="section-label">Projects</p>
           <h2>Featured Projects</h2>
         </div>
 
         <div class="projects-grid">
-          <div class="project-card">
+          <article class="project-card card">
             <p class="project-type">NLP • Transformers • RAG</p>
             <h3>Fraudulent Job Posting Detection</h3>
             <p>
               Built an NLP-based fraud detection system using DistilBERT and RoBERTa to classify
-              18K+ job postings and identify suspicious language patterns. Improved interpretability
-              by integrating retrieval-augmented generation for clearer model explanations.
+              fraudulent job postings and improve interpretability through retrieval-augmented explanations.
             </p>
             <div class="metric-row">
               <span>18K+ job postings</span>
               <span>90%+ ROC-AUC</span>
               <span>RAG explanations</span>
             </div>
-          </div>
+          </article>
 
-          <div class="project-card">
+          <article class="project-card card">
             <p class="project-type">Machine Learning • Regression</p>
             <h3>House Price Prediction</h3>
             <p>
-              Developed a regression-based machine learning workflow to estimate housing prices
-              using structured property data, preprocessing, feature engineering, and model evaluation
-              to identify strong pricing drivers.
+              Developed a regression-based workflow to estimate housing prices using feature engineering,
+              preprocessing, and model evaluation to identify strong pricing drivers.
             </p>
             <div class="metric-row">
               <span>~85% accuracy</span>
+              <span>Regression model</span>
               <span>Feature engineering</span>
-              <span>Regression modeling</span>
             </div>
-          </div>
+          </article>
 
-          <div class="project-card">
+          <article class="project-card card">
             <p class="project-type">NLP • Tableau • Text Analytics</p>
             <h3>Disneyland Review Analysis</h3>
             <p>
-              Analyzed 40,000+ customer reviews to identify satisfaction trends, recurring complaint
-              categories, and visitor experience insights. Built Tableau dashboards to visualize patterns
-              across time, branch, and review behavior.
+              Analyzed large-scale customer reviews to identify sentiment trends, complaint categories,
+              and visitor experience patterns, then visualized findings in Tableau.
             </p>
             <div class="metric-row">
               <span>40K+ reviews</span>
-              <span>45+ engineered features</span>
+              <span>45+ features</span>
               <span>Tableau dashboards</span>
             </div>
-          </div>
+          </article>
 
-          <div class="project-card">
+          <article class="project-card card">
             <p class="project-type">Power BI • DAX • Forecasting</p>
             <h3>Sales Forecasting Dashboard</h3>
             <p>
-              Built an interactive Power BI dashboard for retail sales analysis and forecasting using
-              DAX and time-based analysis to support KPI tracking and decision-ready reporting.
+              Built an interactive Power BI dashboard for retail sales analysis and forecasting
+              using DAX measures and time-based trend analysis.
             </p>
             <div class="metric-row">
               <span>DAX measures</span>
+              <span>KPI reporting</span>
               <span>Forecasting views</span>
-              <span>KPI dashboards</span>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
     <section id="certifications" class="section">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-header">
           <p class="section-label">Certifications</p>
           <h2>Certifications & Learning</h2>
         </div>
 
         <div class="certification-grid">
-          <div class="cert-card">Google Crash Course on Python</div>
-          <div class="cert-card">Programming for Everybody (Python)</div>
-          <div class="cert-card">[Add Certification]</div>
-          <div class="cert-card">[Add Certification]</div>
+          <div class="cert-card card">Google Crash Course on Python</div>
+          <div class="cert-card card">Programming for Everybody (Python)</div>
+          <div class="cert-card card">[Add certification]</div>
+          <div class="cert-card card">[Add certification]</div>
         </div>
       </div>
     </section>
 
     <section id="skills" class="section">
-      <div class="container single-card">
+      <div class="container single-section card">
         <p class="section-label">Skills</p>
         <h2>Core Skills</h2>
         <div class="skills-list">
@@ -269,7 +288,7 @@
     </section>
 
     <section id="resume" class="section">
-      <div class="container resume-box">
+      <div class="container resume-box card">
         <div>
           <p class="section-label">Resume</p>
           <h2>Download my latest resume</h2>
@@ -279,7 +298,7 @@
     </section>
 
     <section id="contact" class="section">
-      <div class="container contact-box">
+      <div class="container contact-box card">
         <p class="section-label">Contact</p>
         <h2>Let’s connect</h2>
         <p class="contact-text">
