@@ -1,12 +1,13 @@
 :root {
-  --bg: #f7f8fb;
+  --bg: #f6f7fb;
   --bg-soft: #eef2f8;
-  --card: #ffffff;
+  --card: rgba(255, 255, 255, 0.82);
   --card-soft: #f3f5f9;
   --text: #1f2937;
   --muted: #667085;
   --accent: #4f46e5;
-  --accent-soft: rgba(79, 70, 229, 0.08);
+  --accent-soft: rgba(79, 70, 229, 0.10);
+  --accent-soft-2: rgba(99, 102, 241, 0.08);
   --line: rgba(15, 23, 42, 0.08);
   --shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
   --max: 1120px;
@@ -15,12 +16,13 @@
 body:not(.light) {
   --bg: #0f172a;
   --bg-soft: #111827;
-  --card: #111827;
+  --card: rgba(17, 24, 39, 0.78);
   --card-soft: #1f2937;
   --text: #f8fafc;
   --muted: #94a3b8;
   --accent: #8b93ff;
-  --accent-soft: rgba(139, 147, 255, 0.14);
+  --accent-soft: rgba(139, 147, 255, 0.12);
+  --accent-soft-2: rgba(59, 130, 246, 0.10);
   --line: rgba(255, 255, 255, 0.08);
   --shadow: 0 14px 34px rgba(0, 0, 0, 0.24);
 }
@@ -40,8 +42,9 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background:
-    radial-gradient(circle at top right, var(--accent-soft), transparent 24%),
-    radial-gradient(circle at bottom left, var(--accent-soft), transparent 20%),
+    radial-gradient(circle at 12% 18%, var(--accent-soft), transparent 0 22%),
+    radial-gradient(circle at 88% 14%, var(--accent-soft-2), transparent 0 18%),
+    radial-gradient(circle at 22% 82%, rgba(148, 163, 184, 0.08), transparent 0 20%),
     linear-gradient(180deg, var(--bg), var(--bg-soft));
   color: var(--text);
   line-height: 1.7;
@@ -62,8 +65,8 @@ a {
   position: sticky;
   top: 0;
   z-index: 30;
-  backdrop-filter: blur(10px);
-  background: color-mix(in srgb, var(--bg) 82%, transparent);
+  backdrop-filter: blur(12px);
+  background: color-mix(in srgb, var(--bg) 72%, transparent);
   border-bottom: 1px solid var(--line);
 }
 
@@ -105,6 +108,7 @@ a {
   background: var(--card);
   color: var(--text);
   cursor: pointer;
+  backdrop-filter: blur(10px);
 }
 
 .section {
@@ -115,6 +119,7 @@ a {
   background: var(--card);
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
 }
 
 .hero {
@@ -203,7 +208,7 @@ h3 {
   padding: 12px 20px;
   border-radius: 999px;
   font-size: 14px;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, background 0.2s ease;
 }
 
 .btn:hover {
@@ -219,28 +224,6 @@ h3 {
   background: transparent;
   border: 1px solid var(--line);
   color: var(--text);
-}
-
-.summary-list {
-  display: grid;
-  gap: 18px;
-  margin-top: 18px;
-}
-
-.summary-item {
-  display: grid;
-  gap: 4px;
-}
-
-.summary-number {
-  color: var(--accent);
-  font-size: 28px;
-  font-weight: 800;
-}
-
-.summary-text {
-  color: var(--muted);
-  font-size: 14px;
 }
 
 .single-section {
@@ -329,7 +312,7 @@ h3 {
 .project-card {
   border-radius: 22px;
   padding: 24px;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-card:hover {
